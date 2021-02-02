@@ -1,0 +1,10 @@
+@import "./assets/css/header.css";
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.body {
+  background-color: #292929;
+  color: #ffffff;
+  font-family: "Gotham Pro";
+}
