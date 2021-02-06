@@ -1,0 +1,54 @@
+:root {
+  --swiper-navigation-size: 18px;
+}
+.hero {
+  padding-top: 123px;
+  text-align: center;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+  font-size: 34px;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 0.33px;
+  font-family: "Gotham Pro Medium";
+}
+.hero-description {
+  font-size: 18px;
+  font-family: "Gotham Pro Light";
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+}
+.flowers-slider {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 83px;
+  margin-top: 87px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #ff2e55;
+}
+.hero-cta { 
+  display: block;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-family: "Gotham Pro Light";
+}
+.button {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff2e55;
+  padding: 30px 65px 26px;
+}

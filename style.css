@@ -1,5 +1,9 @@
 @import "./assets/css/header.css";
-* {
+@import "./assets/css/welcome.css";
+@import "./assets/css/reviews.css";
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   margin: 0 auto;
 }

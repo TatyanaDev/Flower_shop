@@ -1,0 +1,81 @@
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.section-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 96px;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.review-slider {
+  padding-left: 60px;
+  padding-right: 86px;
+}
+.review-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: "Gotham Pro Light";
+  position: relative;
+  margin-right: 52px;
+  background-color: #000000;
+}
+.review-image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+.review-image > * {
+  position: relative;
+}
+.review-image-1 {
+  background: url(../img/bouquet.jpg);
+}
+.review-image-2 {
+  background: url(../img/buket.jpg);
+}
+.review-text {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+}
+.review-name {
+  margin-bottom: 7px;
+}
+.review-link {
+  display: block;
+  color: #f24841;
+  padding-top: 19px;
+}
+.advantages {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.advantages-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-top: 35px;
+}
+.advantage-wrapper {
+  min-height: 85px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
