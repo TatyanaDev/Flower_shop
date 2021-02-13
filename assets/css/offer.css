@@ -1,0 +1,26 @@
+.offer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+.section-title {
+  margin-bottom: 29px;
+}
+.offer-link {
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 65px;
+}
+.offer-label {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+.offer-phone {
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+}
