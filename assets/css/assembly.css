@@ -1,15 +1,17 @@
 .goods {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 93px;
+  padding-bottom: 59px;
 }
-.section-title {
-  /* margin-bottom: 27px; */
+.section-title3 {
+  margin-bottom: 27px;
 }
 .text-red {
+  color: #fe2e55;
 }
 .section-description {
   font-size: 18px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .card {
   text-align: center;
@@ -17,11 +19,8 @@
   padding: 33px 35px 30px;
   margin-top: 27px;
 }
-.card-image {
-}
 .card-title {
   margin-top: 23px;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .card-label {
@@ -61,8 +60,6 @@
   position: absolute;
   z-index: -9;
 }
-.card-label {
-}
 .counter-group {
   display: flex;
   justify-content: center;
@@ -98,7 +95,7 @@
   color: #f24b41;
   display: block;
   text-align: center;
-  margin-top: 39px;
+  margin-top: 29px;
   padding: 10px;
 }
 .more:after {

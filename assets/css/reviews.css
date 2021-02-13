@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 100px;
+  padding-top: 99px;
   padding-bottom: 50px;
 }
 .section-title {
@@ -7,6 +7,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.3px;
+  margin-bottom: 96px;
 }
 .swiper-slide {
   display: flex;
@@ -53,9 +54,6 @@
   letter-spacing: 0.18px;
   line-height: 1.4;
 }
-.review-slide {
-  margin-top: 96px;
-}
 .review-name {
   margin-bottom: 7px;
 }
@@ -67,7 +65,7 @@
 .advantages {
   text-align: center;
   padding-bottom: 100px;
-  padding-top: 50px;
+  padding-top: 48px;
   border-bottom: 1px solid #4c4c4c;
 }
 .advantages-title {

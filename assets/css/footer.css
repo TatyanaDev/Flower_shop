@@ -1,0 +1,48 @@
+.footer {
+  margin-top: 52px;
+}
+.footer-menu {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 33px;
+}
+.footer-menu-item {
+  margin: 0;
+  margin-right: 30px;
+}
+.footer-menu-link {
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.social {
+  font-size: 16px;
+}
+.social-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+.footer-info {
+  text-align: right;
+}
+.footer-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.footer-phone {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 11px;
+}
+.sub-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #ffffff;
+}
+.color {
+  color: #292929;
+}
