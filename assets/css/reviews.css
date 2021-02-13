@@ -7,7 +7,6 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.3px;
-  margin-bottom: 96px;
 }
 .swiper-slide {
   display: flex;
@@ -53,6 +52,9 @@
   font-size: 18px;
   letter-spacing: 0.18px;
   line-height: 1.4;
+}
+.review-slide {
+  margin-top: 96px;
 }
 .review-name {
   margin-bottom: 7px;

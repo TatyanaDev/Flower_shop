@@ -36,7 +36,7 @@
 .swiper-button-next:hover {
   color: #ff2e55;
 }
-.hero-cta { 
+.hero-cta {
   display: block;
   font-size: 19px;
   text-transform: uppercase;
@@ -51,4 +51,6 @@
   color: #ffffff;
   background-color: #ff2e55;
   padding: 30px 65px 26px;
+  cursor: pointer;
+  border: none;
 }
