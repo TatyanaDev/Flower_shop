@@ -28,11 +28,13 @@
   display: block;
   margin-bottom: 10px;
   margin-top: 20px;
+  margin: 20px auto;
 }
 .colors {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 200px;
 }
 .color-label {
   width: 20px;
@@ -40,7 +42,7 @@
   cursor: pointer;
 }
 .color-label.white {
-  background-color: #ffffff;
+  background-color: #240a0a;
 }
 .color-label.biege {
   background-color: #f7b496;
@@ -73,6 +75,7 @@
   color: #ffffff;
   background-color: #292929;
   border: none;
+  outline: none;
 }
 .counter-input {
   border: 2px solid #ffffff;
@@ -108,4 +111,20 @@
   display: inline-block;
   margin-left: 14px;
   vertical-align: middle;
+}
+
+.color-label-active {
+  border: 2px solid yellow;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 476px) {
+  .card {
+    max-width: 250px;
+  }
 }

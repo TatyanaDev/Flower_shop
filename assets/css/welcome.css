@@ -9,11 +9,13 @@
 }
 .hero-title {
   font-size: 34px;
+  margin: auto;
   margin-bottom: 34px;
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 0.33px;
   font-family: "Gotham Pro Medium";
+  max-width: 652px;
 }
 .hero-description {
   font-size: 18px;
@@ -21,6 +23,8 @@
   text-transform: uppercase;
   letter-spacing: 0.18px;
   line-height: 1.4;
+  margin: auto;
+  max-width: 590px;
 }
 .flowers-slider {
   width: 100%;
@@ -53,4 +57,22 @@
   padding: 30px 65px 26px;
   cursor: pointer;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button {
+    padding: 20px 40px;
+  }
 }

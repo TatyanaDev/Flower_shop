@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -13,23 +17,29 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-3 mb-3 mb-md-0">
             <a href="#">
               <img src="./assets/icon/logo.png" alt="Flowers" />
             </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-4 mb-3 mb-md-0">
             <span class="header-description">
               Интернет-магазин<br />цветов с доставкой<br />по всей
               <span class="text-color">России</span>
             </span>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-5">
             <a class="header-phone" href="tel:+78006548745"
               >8 (800) 654-87-45</a
             >
             <span class="header-info">Звонок по России бесплатный</span>
-            <a href="#" class="callback">Заказать звонок</a>
+            <a
+              data-fancybox
+              data-src="#modal"
+              href="javascript:;"
+              class="callback"
+              >Заказать звонок</a
+            >
           </div>
         </div>
       </div>
@@ -37,42 +47,64 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">
-          ЭКСКЛЮЗИВНЫЕ ЦВЕТЫ И БУКЕТЫ<br />FLOWERS SHOP
+          ЭКСКЛЮЗИВНЫЕ ЦВЕТЫ И БУКЕТЫ FLOWERS SHOP
         </h1>
         <p class="hero-description">
-          ПЕРВАЯ В РОССИИ ЭКСКЛЮЗИВНАЯ ДОСТАВКА ЦВЕТОВ<br />ДЛЯ ЛЮДЕЙ, КОТОРЫЕ
-          ЦЕНЯТ
+          ПЕРВАЯ В РОССИИ ЭКСКЛЮЗИВНАЯ ДОСТАВКА ЦВЕТОВ ДЛЯ ЛЮДЕЙ, КОТОРЫЕ ЦЕНЯТ
           <b>УНИКАЛЬНОСТЬ</b>
         </p>
         <div class="swiper-container flowers-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./assets/img/flower-1.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-1.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/flower-2.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-2.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/flower-3.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-3.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/flower-4.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-4.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/flower-5.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-5.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/flower-6.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-6.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
-              <img src="./assets/img/flower-3.png" alt="" />
+              <img
+                src="./assets/img/flowers-from-thе-slider/flower-3.png"
+                alt=""
+              />
             </div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
         <span class="hero-cta">ЗАКАЖИТЕ ЭКСКЛЮЗИВНЫЙ БУКЕТ СО СКИДКОЙ 10%</span>
-        <a href="#" class="button">ЗАКАЗАТЬ БУКЕТ</a>
+        <a data-fancybox data-src="#modal" href="javascript:;" class="button"
+          >ЗАКАЗАТЬ БУКЕТ</a
+        >
       </div>
     </section>
     <section class="reviews">
@@ -80,7 +112,7 @@
         <h2 class="section-title">МЫ ДЕЛАЕМ ЛУЧШИЕ БУКЕТЫ</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide review-slider">
+            <div class="swiper-slide review-slider flex-column flex-md-row">
               <div class="review-image review-image-1">
                 <span class="review-name">Алиса Иванова</span>
                 <span>г. Ноябрьск</span>
@@ -93,12 +125,12 @@
                   вовремя, букет был очень красивый, он очень понравился,
                   спасибо вам огромное.
                 </p>
-                <a href="#" class="review-link"
+                <a href="javascript:;" id="review-1" class="review-link"
                   >Посмотреть фотографии букетов</a
                 >
               </div>
             </div>
-            <div class="swiper-slide review-slider">
+            <div class="swiper-slide review-slider flex-column flex-md-row">
               <div class="review-image review-image-2">
                 <span class="review-name">Юрий Климов</span>
                 <span>г. Ноябрьск</span>
@@ -112,7 +144,7 @@
                   Адресат букет был счастлив, а, значит, со своим заданием
                   персонал магазина справился на отлично.
                 </p>
-                <a href="#" class="review-link"
+                <a href="javascript:;" id="review-2" class="review-link"
                   >Посмотреть фотографии букетов</a
                 >
               </div>
@@ -126,10 +158,10 @@
     <section class="advantages">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-md-4 mb-5 mb-md-0">
             <div class="advantage-wrapper">
               <img
-                src="./assets/img/advantages-1.png"
+                src="./assets/img/advantages/1.png"
                 alt="Только прямые 
         поставки цветов
         из Голландии"
@@ -139,10 +171,10 @@
               ТОЛЬКО ПРЯМЫЕ ПОСТАВКИ ЦВЕТОВ ИЗ&nbsp;ГОЛЛАНДИИ
             </h3>
           </div>
-          <div class="col">
+          <div class="col-md-4 mb-5 mb-md-0">
             <div class="advantage-wrapper">
               <img
-                src="./assets/img/advantages-2.png"
+                src="./assets/img/advantages/2.png"
                 alt="Наши флористы
         имеют 10 летний
         стаж работы"
@@ -152,10 +184,10 @@
               НАШИ ФЛОРИСТЫ ИМЕЮТ 10 ЛЕТНИЙ<br />СТАЖ РАБОТЫ
             </h3>
           </div>
-          <div class="col">
+          <div class="col-md-4 mb-5 mb-md-0">
             <div class="advantage-wrapper">
               <img
-                src="./assets/img/advantages-3.png"
+                src="./assets/img/advantages/3.png"
                 alt="Все цветы
           вручную отбираются
           нашими флористами"
@@ -178,7 +210,7 @@
           руки!
         </p>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" class="card-image" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -227,14 +259,19 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus1">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count1"
+                />
+                <button class="counter-button" id="countPlus1">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" class="card-image" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -283,14 +320,19 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus2">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count2"
+                />
+                <button class="counter-button" id="countPlus2">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" class="card-image" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -339,14 +381,19 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus3">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  id="count3"
+                  value="0"
+                />
+                <button class="counter-button" id="countPlus3">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" class="card-image" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -395,14 +442,19 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus4">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count4"
+                />
+                <button class="counter-button" id="countPlus4">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" class="card-image" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -451,14 +503,80 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus5">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count5"
+                />
+                <button class="counter-button" id="countPlus5">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="./assets/img/rose.png" alt="rose" class="card-image" />
+              <h3 class="card-title">РОЗЫ</h3>
+              <span class="card-label">Выберите цвет:</span>
+              <div class="colors">
+                <label class="color-label white" id="test" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  name="color"
+                  id="white"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  name="color"
+                  id="biege"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  name="color"
+                  id="pink"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  name="color"
+                  id="red"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  name="color"
+                  id="blue"
+                  value="blue"
+                />
+              </div>
+              <span class="card-label">Количество:</span>
+              <div class="counter-group">
+                <button class="counter-button" id="countMinus6">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count6"
+                />
+                <button class="counter-button" id="countPlus6">+</button>
+              </div>
+              <button class="button card-button">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" class="card-image" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -507,70 +625,19 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus7">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count7"
+                />
+                <button class="counter-button" id="countPlus7">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="./assets/img/rose.png" alt="rose" class="card-image" />
-              <h3 class="card-title">РОЗЫ</h3>
-              <span class="card-label">Выберите цвет:</span>
-              <div class="colors">
-                <label class="color-label white" for="white"></label>
-                <input
-                  class="color-input"
-                  type="radio"
-                  name="color"
-                  id="white"
-                  value="white"
-                />
-                <label class="color-label biege" for="biege"></label>
-                <input
-                  class="color-input"
-                  type="radio"
-                  name="color"
-                  id="biege"
-                  value="biege"
-                />
-                <label class="color-label pink" for="pink"></label>
-                <input
-                  class="color-input"
-                  type="radio"
-                  name="color"
-                  id="pink"
-                  value="pink"
-                />
-                <label class="color-label red" for="red"></label>
-                <input
-                  class="color-input"
-                  type="radio"
-                  name="color"
-                  id="red"
-                  value="red"
-                />
-                <label class="color-label blue" for="blue"></label>
-                <input
-                  class="color-input"
-                  type="radio"
-                  name="color"
-                  id="blue"
-                  value="blue"
-                />
-              </div>
-              <span class="card-label">Количество:</span>
-              <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
-              </div>
-              <button class="button card-button">В КОРЗИНУ</button>
-            </div>
-          </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6">
             <div class="card">
               <img src="./assets/img/rose.png" alt="rose" />
               <h3 class="card-title">РОЗЫ</h3>
@@ -619,15 +686,20 @@
               </div>
               <span class="card-label">Количество:</span>
               <div class="counter-group">
-                <button class="counter-button">-</button>
-                <input type="text" class="counter-input" value="1" />
-                <button class="counter-button">+</button>
+                <button class="counter-button" id="countMinus8">-</button>
+                <input
+                  type="text"
+                  class="counter-input"
+                  value="0"
+                  id="count8"
+                />
+                <button class="counter-button" id="countPlus8">+</button>
               </div>
               <button class="button card-button">В КОРЗИНУ</button>
             </div>
           </div>
         </div>
-        <a href="#" class="more">Все цветы</a>
+        <a href="javascript:;" id="all-flowers" class="more">Все цветы</a>
       </div>
     </section>
     <section class="offer">
@@ -639,9 +711,9 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mb-5 md-md-0">
             <nav>
               <ul class="footer-menu">
                 <li class="footer-menu-item">
@@ -666,7 +738,7 @@
             <a href="tel:+78006548745" class="footer-phone"
               >8 (800) 654-87-45</a
             >
-            <span class="footer-label">Ежедневно, круглосуточно.</span>
+            <span class="footer-label bottom">Ежедневно, круглосуточно.</span>
           </div>
         </div>
       </div>
@@ -688,7 +760,20 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal">
+      <h2 class="modal-title">Закажите обратный звонок</h2>
+      <form action="#">
+        <input
+          class="modal-input"
+          type="tel"
+          placeholder="+7 (___) ___-__-__"
+        />
+        <button class="button modal-button">Перезвоните мне</button>
+      </form>
+    </div>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

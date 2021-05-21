@@ -79,3 +79,25 @@
   margin-bottom: 30px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 56px;
+  }
+  .review-text {
+    margin-top: 30px;
+  }
+  .advantages {
+    padding: 0;
+  }
+  .advantages-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 476px) {
+  .review-text {
+    font-size: 15px;
+  }
+}

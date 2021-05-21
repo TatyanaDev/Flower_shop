@@ -29,6 +29,9 @@
 .footer-label {
   display: block;
   font-size: 14px;
+  margin-bottom: 12px;
+}
+.bottom {
   margin-bottom: 40px;
 }
 .footer-phone {
@@ -45,4 +48,14 @@
 }
 .color {
   color: #292929;
+}
+
+@media (max-width: 768px) {
+  .footer-info {
+    text-align: left;
+  }
+  .footer-container,
+  .sub-footer {
+    padding-left: 30px;
+  }
 }
