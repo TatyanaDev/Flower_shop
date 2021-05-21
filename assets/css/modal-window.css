@@ -1,0 +1,17 @@
+.modal {
+  display: none;
+}
+.modal-title {
+  color: #292929;
+  margin-bottom: 20px;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.modal-button{
+  width: 100%;
+}

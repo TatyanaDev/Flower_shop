@@ -4,6 +4,8 @@
 @import "./assets/css/assembly.css";
 @import "./assets/css/offer.css";
 @import "./assets/css/footer.css";
+@import "./assets/css/modal-window.css";
+
 *,
 *:after,
 *:before {
