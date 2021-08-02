@@ -113,9 +113,9 @@
   vertical-align: middle;
 }
 
-.color-label-active {
+/* .colors-container1 .input1:checked + .label1 {
   border: 2px solid yellow;
-}
+} */
 
 @media (max-width: 768px) {
   .card {
