@@ -17,7 +17,16 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+  position: relative;
 }
+
+.header-phone::before {
+  content: url(../img/petals/2.png);
+  position: absolute;
+  bottom: 208%;
+  right: 85%;
+}
+
 .header-info {
   display: block;
   text-align: right;
@@ -39,5 +48,8 @@
   .header-info,
   .callback {
     text-align: center;
+  }
+  .header-phone::before {
+    display: none;
   }
 }
