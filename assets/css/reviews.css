@@ -1,96 +1,113 @@
 .reviews {
-  padding-top: 99px;
   padding-bottom: 50px;
+  padding-top: 99px;
 }
+
 .section-title {
-  font-size: 30px;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.3px;
   margin-bottom: 96px;
+  text-align: center;
+  font-size: 30px;
 }
+
 .swiper-slide {
-  display: flex;
   align-items: center;
+  display: flex;
 }
+
 .review-slider {
-  padding-left: 60px;
   padding-right: 86px;
+  padding-left: 60px;
 }
+
 .review-image {
-  display: flex;
-  align-items: center;
+  font-family: "Gotham Pro Light";
+  background-color: #000000;
   justify-content: center;
   flex-direction: column;
-  width: 220px;
-  height: 220px;
-  flex-shrink: 0;
+  align-items: center;
+  position: relative;
   border-radius: 50%;
+  margin-right: 52px;
   overflow: hidden;
   font-size: 20px;
-  font-family: "Gotham Pro Light";
-  position: relative;
-  margin-right: 52px;
-  background-color: #000000;
+  flex-shrink: 0;
+  height: 220px;
+  display: flex;
+  width: 220px;
 }
+
 .review-image:before {
-  content: "";
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
 }
+
 .review-image > * {
   position: relative;
 }
-.review-image-1 {
-  background: url(../img/bouquet.jpg);
+
+.alices-review-background {
+  background: url(./../images/reviews/alisa-ivanova.jpg);
 }
-.review-image-2 {
-  background: url(../img/buket.jpg);
+
+.yuris-review-background {
+  background: url(./../images/reviews/yuri-klimov.jpg);
 }
-.review-text {
-  font-size: 18px;
-  letter-spacing: 0.18px;
-  line-height: 1.4;
-}
+
 .review-name {
   margin-bottom: 7px;
 }
-.review-link {
-  display: block;
-  color: #f24841;
-  padding-top: 19px;
-}
-.advantages {
-  text-align: center;
-  padding-bottom: 100px;
-  padding-top: 48px;
-  border-bottom: 1px solid #4c4c4c;
-}
-.advantages-title {
-  font-size: 30px;
-  text-transform: uppercase;
+
+.review-text {
+  letter-spacing: 0.18px;
   line-height: 1.4;
-  padding-top: 35px;
+  font-size: 18px;
 }
+
+.review-link {
+  padding-top: 19px;
+  color: #f24841;
+  display: block;
+}
+
+.advantages {
+  border-bottom: 1px solid #4c4c4c;
+  padding-bottom: 100px;
+  text-align: center;
+  padding-top: 48px;
+}
+
 .advantage-wrapper {
-  min-height: 85px;
   margin-bottom: 30px;
+  min-height: 85px;
   margin: 0 auto;
+}
+
+.advantages-title {
+  text-transform: uppercase;
+  padding-top: 35px;
+  line-height: 1.4;
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
   .section-title {
-    font-size: 24px;
     margin-bottom: 56px;
+    font-size: 24px;
   }
+
   .review-text {
     margin-top: 30px;
   }
+
   .advantages {
     padding: 0;
   }
+
   .advantages-title {
     font-size: 24px;
   }

@@ -1,45 +1,49 @@
 .header {
   padding-top: 49px;
 }
+
 .header-description {
   font-family: "Gotham Pro Light";
   letter-spacing: 0.12px;
   font-size: 12px;
 }
-.text-color {
+
+.russia-text {
   font-family: "Gotham Pro Medium";
   color: #ff3469;
 }
+
 .header-phone {
-  display: block;
+  text-decoration: none;
+  position: relative;
   text-align: right;
   color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
   font-weight: 500;
-  position: relative;
+  font-size: 20px;
+  display: block;
 }
 
 .header-phone::before {
-  content: url(../img/petals/2.png);
+  content: url(./../images/petals/first.png);
   position: absolute;
   bottom: 208%;
   right: 85%;
 }
 
 .header-info {
-  display: block;
   text-align: right;
-  font-size: 12px;
   font-weight: 400;
   margin-top: 7px;
-}
-.callback {
+  font-size: 12px;
   display: block;
+}
+
+.callback {
   text-align: right;
   color: #ff3469;
   margin-top: 16px;
   font-size: 16px;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -49,6 +53,7 @@
   .callback {
     text-align: center;
   }
+
   .header-phone::before {
     display: none;
   }

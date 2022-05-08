@@ -1,87 +1,80 @@
-:root {
-  --swiper-navigation-size: 18px;
-}
 .hero {
+  border-bottom: 1px solid #4c4c4c;
+  padding-bottom: 77px;
   padding-top: 123px;
   text-align: center;
-  padding-bottom: 77px;
-  border-bottom: 1px solid #4c4c4c;
 }
+
 .hero-title {
+  font-family: "Gotham Pro Medium";
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+  margin-bottom: 34px;
+  position: relative;
+  max-width: 700px;
+  line-height: 1.4;
   font-size: 34px;
   margin: auto;
-  margin-bottom: 34px;
-  text-transform: uppercase;
-  line-height: 1.4;
-  letter-spacing: 0.33px;
-  font-family: "Gotham Pro Medium";
-  max-width: 700px;
-  position: relative;
 }
 
 .hero-description {
-  font-size: 18px;
   font-family: "Gotham Pro Light";
   text-transform: uppercase;
   letter-spacing: 0.18px;
-  line-height: 1.4;
-  margin: auto;
-  max-width: 590px;
   position: relative;
+  max-width: 590px;
+  line-height: 1.4;
+  font-size: 18px;
+  margin: auto;
 }
 
-.hero-description ::before {
-  content: url(../img/petals/1.png);
+.hero-description::before {
+  content: url(./../images/petals/second.png);
   position: absolute;
-  right: 130%;
   bottom: 220%;
+  right: 130%;
 }
 
 .hero-description::after {
-  content: url(../img/petals/3.png);
+  content: url(./../images/petals/third.png);
   position: absolute;
   left: 160%;
   top: 100%;
 }
 
 .flowers-slider {
-  width: 100%;
-  text-align: center;
   margin-bottom: 83px;
+  text-align: center;
   margin-top: 87px;
+  width: 100%;
 }
-.swiper-button-prev,
-.swiper-button-next {
-  color: #ffffff;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: #ff2e55;
-}
+
 .hero-cta {
-  display: block;
-  font-size: 19px;
+  font-family: "Gotham Pro Light";
   text-transform: uppercase;
   margin-bottom: 36px;
-  font-family: "Gotham Pro Light";
+  font-size: 19px;
+  display: block;
 }
+
 .button {
-  display: inline-block;
-  font-size: 18px;
+  background-color: #ff2e55;
   text-transform: uppercase;
+  padding: 30px 65px 26px;
+  display: inline-block;
   text-decoration: none;
   color: #ffffff;
-  background-color: #ff2e55;
-  padding: 30px 65px 26px;
   cursor: pointer;
+  font-size: 18px;
   border: none;
 }
 
 @media (max-width: 1200px) {
   .hero-description ::before {
-    right: 110%;
     bottom: 180%;
+    right: 110%;
   }
+
   .hero-description::after {
     left: 110%;
   }
@@ -89,9 +82,10 @@
 
 @media (max-width: 992px) {
   .hero-description ::before {
-    right: 90%;
     bottom: 140%;
+    right: 90%;
   }
+
   .hero-description::after {
     left: 90%;
   }
@@ -101,20 +95,24 @@
   .hero {
     padding-top: 50px;
   }
+
   .hero-title {
-    font-size: 24px;
     margin-bottom: 20px;
     line-height: 1.6;
     max-width: 652px;
+    font-size: 24px;
   }
+
   .hero-description {
-    font-size: 16px;
     line-height: 1.6;
+    font-size: 16px;
   }
+
   .hero-description ::before,
   .hero-description::after {
     display: none;
   }
+
   .button {
     padding: 20px 40px;
   }

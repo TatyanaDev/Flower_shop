@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(() => {
   new Swiper('.flowers-slider', {
     loop: true,
     slidesPerView: 6,
@@ -28,96 +28,87 @@ $(document).ready(function () {
     }
   })
 
-  $('#review-1,#review-2,#all-flowers').on('click', function () {
+  $('#alices-review,#yuris-review,#all-flowers').on('click', () => {
     $.fancybox.open(
       [
         {
           src:
-            'https://elflora.ru/upload/iblock/253/25389ad2e3b6cb6efc93165865725d83.jpg',
+            '/assets/images/photo-gallery/bouquet-of-25-red-roses-with-eucalyptus.jpg',
           opts: {
             caption: 'Букет 25 красных роз с эвкалиптом',
             thumb:
-              'https://elflora.ru/upload/iblock/253/25389ad2e3b6cb6efc93165865725d83.jpg'
+              '/assets/images/photo-gallery/bouquet-of-25-red-roses-with-eucalyptus.jpg'
           }
         },
         {
-          src:
-            'https://beru-buket.ru/images/stories/virtuemart/product/romashka-romashka.jpg',
+          src: '/assets/images/photo-gallery/big-bouquet-of-daisies.jpg',
           opts: {
             caption: 'Большой букет ромашек',
-            thumb:
-              'https://beru-buket.ru/images/stories/virtuemart/product/romashka-romashka.jpg'
+            thumb: '/assets/images/photo-gallery/big-bouquet-of-daisies.jpg'
+          }
+        },
+        {
+          src: '/assets/images/photo-gallery/purple-hydrangea-bouquet.jpeg',
+          opts: {
+            caption: 'Букет из фиолетовой гортензии',
+            thumb: '/assets/images/photo-gallery/purple-hydrangea-bouquet.jpeg'
           }
         },
         {
           src:
-            'https://zarum.ru/uploads/posts/2020-07/1596194854_c256ae5f-29b8-458a-b35e-5fc05aff4320.jpeg',
-          opts: {
-            caption: 'Букет из фиолетовой гортензии',
-            thumb:
-              'https://zarum.ru/uploads/posts/2020-07/1596194854_c256ae5f-29b8-458a-b35e-5fc05aff4320.jpeg'
-          }
-        },
-        {
-          src: 'https://million-buketov.ru/d/buket-iz-vasilkov-s-upakovkoy.jpg',
+            '/assets/images/photo-gallery/a-large-bouquet-of-cornflowers.webp',
           opts: {
             caption: 'Большой букет васильков',
             thumb:
-              'https://million-buketov.ru/d/buket-iz-vasilkov-s-upakovkoy.jpg'
+              '/assets/images/photo-gallery/a-large-bouquet-of-cornflowers.webp'
           }
         },
         {
           src:
-            'https://static-sl.insales.ru/images/products/1/3456/242945408/514-1.jpg',
+            '/assets/images/photo-gallery/bouquet-of-raspberry-hydrangea.jpg',
           opts: {
             caption: 'Букет из малиновой гортензии',
             thumb:
-              'https://static-sl.insales.ru/images/products/1/3456/242945408/514-1.jpg'
+              '/assets/images/photo-gallery/bouquet-of-raspberry-hydrangea.jpg'
           }
         },
         {
-          src:
-            'https://lh4.googleusercontent.com/-LK7MMd-SvbyI-wezk3n_gADj6U0kgAIJQ1neZv1KtxJk5fsmH24x6VrXg5ZC6GYKW-B0XLN5n33S7ZHDq7D-2-DUKvV3BtlODc5a1kQODlDYCd976-_GZo577LvcRrzsgPNAlo6',
+          src: '/assets/images/photo-gallery/bouquet-of-orange-lilies.png',
           opts: {
             caption: 'Букет оранжевых лилий',
-            thumb:
-              'https://lh4.googleusercontent.com/-LK7MMd-SvbyI-wezk3n_gADj6U0kgAIJQ1neZv1KtxJk5fsmH24x6VrXg5ZC6GYKW-B0XLN5n33S7ZHDq7D-2-DUKvV3BtlODc5a1kQODlDYCd976-_GZo577LvcRrzsgPNAlo6'
+            thumb: '/assets/images/photo-gallery/bouquet-of-orange-lilies.png'
           }
         },
         {
-          src:
-            'https://flor52.ru/images/stories/virtuemart/product/WA0Z_FFp29M.jpg',
+          src: '/assets/images/photo-gallery/lush-bouquet-of-23-peonies.jpg',
           opts: {
             caption: 'Пышный букет из 23 пионов',
-            thumb:
-              'https://flor52.ru/images/stories/virtuemart/product/WA0Z_FFp29M.jpg'
+            thumb: '/assets/images/photo-gallery/lush-bouquet-of-23-peonies.jpg'
           }
         },
         {
           src:
-            'https://kiwiflowershop.com.ua/image/cache/catalog/photo_2020-10-11_18-00-40-601x800.jpg',
+            '/assets/images/photo-gallery/mono-bouquet-of-colored-tulips.jpg',
           opts: {
             caption: 'Моно букет из крашенных тюльпанов',
             thumb:
-              'https://kiwiflowershop.com.ua/image/cache/catalog/photo_2020-10-11_18-00-40-601x800.jpg'
+              '/assets/images/photo-gallery/mono-bouquet-of-colored-tulips.jpg'
           }
         },
         {
-          src:
-            'https://dostavka-cvetov64.ru/upload/iblock/236/23643b06b753862f3148085e497a5072.jpg',
+          src: '/assets/images/photo-gallery/bouquet-of-tulips-сolumbus.jpg',
           opts: {
             caption: 'Букет тюльпанов Коламбус',
-            thumb:
-              'https://dostavka-cvetov64.ru/upload/iblock/236/23643b06b753862f3148085e497a5072.jpg'
+            thumb: '/assets/images/photo-gallery/bouquet-of-tulips-сolumbus.jpg'
           }
         },
         {
           src:
-            'http://elfflowers.ru/images/stories/virtuemart/product/yaAUuw7LuYo.jpg',
+            '/assets/images/photo-gallery/bouquet-of-hydrangeas-3-colors.jpg',
           opts: {
             caption: 'Букет гортензий 3 цвета',
             thumb:
-              'http://elfflowers.ru/images/stories/virtuemart/product/yaAUuw7LuYo.jpg'
+              '/assets/images/photo-gallery/bouquet-of-hydrangeas-3-colors.jpg'
           }
         }
       ],
@@ -130,131 +121,3 @@ $(document).ready(function () {
     )
   })
 })
-
-document.getElementById('countMinus1').onclick = function () {
-  let countMinus = count1.value
-  if (countMinus >= 1) {
-    count1.value--
-    countMinus = count1.value
-  }
-}
-
-document.getElementById('countPlus1').onclick = function () {
-  let countPlus = count1.value
-  if (countPlus <= 150) {
-    count1.value++
-    countPlus = count1.value
-  }
-}
-
-document.getElementById('countMinus2').onclick = function () {
-  let countMinus = count2.value
-  if (countMinus >= 1) {
-    count2.value--
-    countMinus = count2.value
-  }
-}
-
-document.getElementById('countPlus2').onclick = function () {
-  let countPlus = count2.value
-  if (countPlus <= 150) {
-    count2.value++
-    countPlus = count2.value
-  }
-}
-
-document.getElementById('countMinus3').onclick = function () {
-  let countMinus = count3.value
-  if (countMinus >= 1) {
-    count3.value--
-    countMinus = count3.value
-  }
-}
-
-document.getElementById('countPlus3').onclick = function () {
-  let countPlus = count3.value
-  if (countPlus <= 150) {
-    count3.value++
-    countPlus = count3.value
-  }
-}
-
-document.getElementById('countMinus4').onclick = function () {
-  let countMinus = count4.value
-  if (countMinus >= 1) {
-    count4.value--
-    countMinus = count4.value
-  }
-}
-
-document.getElementById('countPlus4').onclick = function () {
-  let countPlus = count4.value
-  if (countPlus <= 150) {
-    count4.value++
-    countPlus = count4.value
-  }
-}
-
-document.getElementById('countMinus5').onclick = function () {
-  let countMinus = count5.value
-  if (countMinus >= 1) {
-    count5.value--
-    countMinus = count5.value
-  }
-}
-
-document.getElementById('countPlus5').onclick = function () {
-  let countPlus = count5.value
-  if (countPlus <= 150) {
-    count5.value++
-    countPlus = count5.value
-  }
-}
-
-document.getElementById('countMinus6').onclick = function () {
-  let countMinus = count6.value
-  if (countMinus >= 1) {
-    count6.value--
-    countMinus = count6.value
-  }
-}
-
-document.getElementById('countPlus6').onclick = function () {
-  let countPlus = count6.value
-  if (countPlus <= 150) {
-    count6.value++
-    countPlus = count6.value
-  }
-}
-
-document.getElementById('countMinus7').onclick = function () {
-  let countMinus = count7.value
-  if (countMinus >= 1) {
-    count7.value--
-    countMinus = count7.value
-  }
-}
-
-document.getElementById('countPlus7').onclick = function () {
-  let countPlus = count7.value
-  if (countPlus <= 150) {
-    count7.value++
-    countPlus = count7.value
-  }
-}
-
-document.getElementById('countMinus8').onclick = function () {
-  let countMinus = count8.value
-  if (countMinus >= 1) {
-    count8.value--
-    countMinus = count8.value
-  }
-}
-
-document.getElementById('countPlus8').onclick = function () {
-  let countPlus = count8.value
-  if (countPlus <= 150) {
-    count8.value++
-    countPlus = count8.value
-  }
-}

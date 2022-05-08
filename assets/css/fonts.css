@@ -1,18 +1,20 @@
 @font-face {
   font-family: "Gotham Pro Light";
-  src: url("../fonts/gotham/GothamPro-Light.ttf") format("truetype");
+  src: url("./../font/gotham/GothamPro-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Gotham Pro Medium";
-  src: url("../fonts/gotham/GothamPro-Medium.ttf") format("truetype");
+  src: url("./../font/gotham/GothamPro-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Gotham Pro";
-  src: url("../fonts/gotham/GothamPro.ttf") format("truetype");
+  src: url("./../font/gotham/GothamPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

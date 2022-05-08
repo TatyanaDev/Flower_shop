@@ -1,121 +1,141 @@
 .goods {
-  padding-top: 93px;
   padding-bottom: 59px;
+  padding-top: 93px;
 }
-.section-title3 {
+
+.section-title-goods {
   margin-bottom: 27px;
 }
-.text-red {
+
+.text-color {
   color: #fe2e55;
 }
+
 .section-description {
-  font-size: 18px;
-  text-align: center;
   margin-bottom: 50px;
-}
-.card {
   text-align: center;
+  font-size: 18px;
+}
+
+.card {
   border: 3px solid #ffffff;
   padding: 33px 35px 30px;
+  text-align: center;
   margin-top: 27px;
 }
+
 .card-title {
-  margin-top: 23px;
   text-transform: uppercase;
+  margin-top: 23px;
 }
+
 .card-label {
+  margin-bottom: 10px;
+  margin: 20px auto;
+  margin-top: 20px;
   font-size: 14px;
   display: block;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin: 20px auto;
 }
+
 .colors {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: 200px;
+  display: flex;
 }
+
 .color-label {
-  width: 20px;
-  height: 20px;
   cursor: pointer;
+  height: 20px;
+  width: 20px;
 }
+
 .color-label.white {
   background-color: #240a0a;
 }
+
 .color-label.biege {
   background-color: #f7b496;
 }
+
 .color-label.pink {
   background-color: #ed366e;
 }
+
 .color-label.red {
   background-color: #ff0000;
 }
+
 .color-label.blue {
   background-color: #12129d;
 }
+
 .color-input {
-  opacity: 0;
   visibility: hidden;
   position: absolute;
   z-index: -9;
+  opacity: 0;
 }
+
 .counter-group {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
+
 .counter-button {
-  width: 40px;
-  height: 40px;
+  background-color: #292929;
+  color: #ffffff;
   cursor: pointer;
   font-size: 16px;
-  color: #ffffff;
-  background-color: #292929;
-  border: none;
   outline: none;
+  height: 40px;
+  border: none;
+  width: 40px;
 }
+
 .counter-input {
   border: 2px solid #ffffff;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  color: #ffffff;
   background-color: #292929;
-  margin-left: 15px;
+  text-align: center;
   margin-right: 15px;
+  margin-left: 15px;
+  color: #ffffff;
+  height: 40px;
+  width: 40px;
 }
+
 .card-button {
-  font-size: 14px;
-  width: 100%;
   padding: 16px 26.5px 13px;
   margin-top: 20px;
-}
-.more {
   font-size: 14px;
-  color: #f24b41;
-  display: block;
+  width: 100%;
+}
+
+.more {
   text-align: center;
+  color: #f24b41;
   margin-top: 29px;
+  font-size: 14px;
+  display: block;
   padding: 10px;
 }
+
 .more:after {
+  background-image: url(./../icons/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 14px;
   content: "";
   width: 10px;
   height: 4px;
-  background-image: url(..//icon/caret.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  margin-left: 14px;
-  vertical-align: middle;
 }
 
-/* .colors-container1 .input1:checked + .label1 {
-  border: 2px solid yellow;
-} */
+.selected-color{
+  border: 3px solid #ffff00;
+}
 
 @media (max-width: 768px) {
   .card {
