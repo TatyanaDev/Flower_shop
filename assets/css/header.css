@@ -23,19 +23,19 @@
   display: block;
 }
 
-.header-phone::before {
-  content: url(./../images/petals/first.png);
-  position: absolute;
-  bottom: 208%;
-  right: 85%;
-}
-
 .header-info {
   text-align: right;
   font-weight: 400;
   margin-top: 7px;
   font-size: 12px;
   display: block;
+}
+
+.header-info::before {
+  content: url(./../images/petals/first.png);
+  position: absolute;
+  bottom: 97%;
+  right: 28%;
 }
 
 .callback {
@@ -54,7 +54,7 @@
     text-align: center;
   }
 
-  .header-phone::before {
+  .header-info::before {
     display: none;
   }
 }
